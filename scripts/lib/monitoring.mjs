@@ -49,9 +49,11 @@ async function performHttpCheck(service) {
     });
 
     const responseTime = Date.now() - startedAt;
+    const acceptCodes = service.acceptCodes ?? [];
     const ok =
-      response.status >= HTTP_STATUS_OK_MIN &&
-      response.status <= HTTP_STATUS_OK_MAX;
+      (response.status >= HTTP_STATUS_OK_MIN &&
+        response.status <= HTTP_STATUS_OK_MAX) ||
+      acceptCodes.includes(response.status);
 
     return {
       timestamp: new Date().toISOString(),
