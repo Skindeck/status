@@ -1,0 +1,53 @@
+{
+  "site": {
+    "name": "SkinDeck Status",
+    "baseUrl": "https://status.skindeck.com",
+    "websiteUrl": "https://skindeck.com",
+    "repositoryUrl": "https://github.com/Skindeck/status",
+    "subscribeUrl": "https://github.com/Skindeck/status/issues",
+    "description": "System status, uptime history, and incident communication for SkinDeck services.",
+    "pollIntervalMinutes": 5
+  },
+  "services": [
+    {
+      "slug": "website",
+      "name": "Website",
+      "shortName": "skindeck.com",
+      "description": "The main web experience for browsing and trading on SkinDeck.",
+      "kind": "http",
+      "url": "https://skindeck.com",
+      "method": "GET",
+      "timeoutMs": 8000
+    },
+    {
+      "slug": "api",
+      "name": "API",
+      "shortName": "api.skindeck.com",
+      "description": "Core application API powering trading, auth, and account flows.",
+      "kind": "http",
+      "url": "https://api.skindeck.com",
+      "method": "GET",
+      "timeoutMs": 8000
+    },
+    {
+      "slug": "market",
+      "name": "Market",
+      "shortName": "Market",
+      "description": "Market availability and health of the item listing pipeline.",
+      "kind": "http",
+      "url": "https://api.skindeck.com/health/market",
+      "method": "GET",
+      "timeoutMs": 10000
+    },
+    {
+      "slug": "inventory",
+      "name": "Inventory",
+      "shortName": "Inventory",
+      "description": "Steam inventory fetching and pricing pipeline.",
+      "kind": "http",
+      "url": "https://api.skindeck.com/health/inventory",
+      "method": "GET",
+      "timeoutMs": 10000
+    }
+  ]
+}
