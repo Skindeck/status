@@ -8,7 +8,7 @@
     "description": "System status, uptime history, and incident communication for SkinDeck services.",
     "pollIntervalMinutes": 5
   },
-  "generatedAt": "2026-08-17T10:51:49.710Z",
+  "generatedAt": "2026-08-17T10:59:35.438Z",
   "overall": {
     "status": "operational",
     "title": "All Systems Operational",
@@ -17,8 +17,8 @@
   "metrics": {
     "monitoredServices": 4,
     "operationalServices": 4,
-    "averageResponseTime24h": 2645,
-    "uptime90d": 0.9684847198641766
+    "averageResponseTime24h": 2651,
+    "uptime90d": 0.9684980907933813
   },
   "services": [
     {
@@ -29,15 +29,14 @@
       "target": "https://skindeck.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-17T10:51:36.203Z",
-      "responseTime": 204,
+      "lastCheckedAt": "2026-08-17T10:59:27.354Z",
+      "responseTime": 180,
       "httpCode": 429,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
       "averageResponseTime24h": 213,
       "sparkline": [
-        258,
         159,
         180,
         207,
@@ -84,7 +83,8 @@
         213,
         186,
         181,
-        204
+        204,
+        180
       ],
       "dailyBars": [
         {
@@ -715,7 +715,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 232
+          "averageResponseTime": 230
         }
       ]
     },
@@ -727,15 +727,14 @@
       "target": "https://api.skindeck.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-17T10:51:37.376Z",
-      "responseTime": 1161,
+      "lastCheckedAt": "2026-08-17T10:59:29.048Z",
+      "responseTime": 1680,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9664685908319185,
+      "uptime90d": 0.9664828171404327,
       "uptime24h": 1,
-      "averageResponseTime24h": 1730,
+      "averageResponseTime24h": 1741,
       "sparkline": [
-        4236,
         288,
         5129,
         1717,
@@ -782,7 +781,8 @@
         4738,
         397,
         1173,
-        1161
+        1161,
+        1680
       ],
       "dailyBars": [
         {
@@ -1413,7 +1413,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 1112
+          "averageResponseTime": 1134
         }
       ]
     },
@@ -1425,15 +1425,14 @@
       "target": "https://api.skindeck.com/health/market",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-17T10:51:41.608Z",
-      "responseTime": 4225,
+      "lastCheckedAt": "2026-08-17T10:59:30.253Z",
+      "responseTime": 1197,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9698641765704584,
+      "uptime90d": 0.9698769622401358,
       "uptime24h": 1,
-      "averageResponseTime24h": 1296,
+      "averageResponseTime24h": 1309,
       "sparkline": [
-        4088,
         119,
         2234,
         279,
@@ -1480,7 +1479,8 @@
         7898,
         63,
         1330,
-        4225
+        4225,
+        1197
       ],
       "dailyBars": [
         {
@@ -2111,7 +2111,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 949
+          "averageResponseTime": 959
         }
       ]
     },
@@ -2123,15 +2123,14 @@
       "target": "https://api.skindeck.com/health/inventory",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-17T10:51:49.195Z",
-      "responseTime": 7581,
+      "lastCheckedAt": "2026-08-17T10:59:34.852Z",
+      "responseTime": 4593,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9376061120543294,
+      "uptime90d": 0.9376325837929571,
       "uptime24h": 0.9647058823529412,
-      "averageResponseTime24h": 7342,
+      "averageResponseTime24h": 7341,
       "sparkline": [
-        13294,
         5104,
         4268,
         8251,
@@ -2178,7 +2177,8 @@
         10013,
         3114,
         7359,
-        7581
+        7581,
+        4593
       ],
       "dailyBars": [
         {
@@ -2806,10 +2806,10 @@
         },
         {
           "date": "2026-08-17T00:00:00.000Z",
-          "label": "91.67% uptime",
+          "label": "92% uptime",
           "status": "outage",
-          "availability": 0.9166666666666666,
-          "averageResponseTime": 6899
+          "availability": 0.92,
+          "averageResponseTime": 6799
         }
       ]
     }
