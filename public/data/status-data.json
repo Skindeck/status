@@ -8,17 +8,17 @@
     "description": "System status, uptime history, and incident communication for SkinDeck services.",
     "pollIntervalMinutes": 5
   },
-  "generatedAt": "2026-11-02T08:22:03.493Z",
+  "generatedAt": "2026-11-02T18:03:49.871Z",
   "overall": {
-    "status": "operational",
-    "title": "All Systems Operational",
-    "message": "All monitored services are responding normally."
+    "status": "outage",
+    "title": "Partial Service Outage",
+    "message": "Market is currently unavailable."
   },
   "metrics": {
     "monitoredServices": 4,
-    "operationalServices": 4,
-    "averageResponseTime24h": 1703,
-    "uptime90d": 0.97117202268431
+    "operationalServices": 3,
+    "averageResponseTime24h": 1693,
+    "uptime90d": 0.9710763394973921
   },
   "services": [
     {
@@ -29,15 +29,14 @@
       "target": "https://skindeck.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-11-02T08:21:53.304Z",
-      "responseTime": 174,
+      "lastCheckedAt": "2026-11-02T18:03:41.104Z",
+      "responseTime": 361,
       "httpCode": 429,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 251,
+      "averageResponseTime24h": 265,
       "sparkline": [
-        286,
         280,
         275,
         328,
@@ -84,7 +83,8 @@
         230,
         238,
         415,
-        174
+        174,
+        361
       ],
       "dailyBars": [
         {
@@ -715,7 +715,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 264
+          "averageResponseTime": 284
         }
       ]
     },
@@ -727,15 +727,14 @@
       "target": "https://api.skindeck.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-11-02T08:21:54.256Z",
-      "responseTime": 930,
+      "lastCheckedAt": "2026-11-02T18:03:41.356Z",
+      "responseTime": 243,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9754253308128544,
+      "uptime90d": 0.9758179231863442,
       "uptime24h": 1,
-      "averageResponseTime24h": 374,
+      "averageResponseTime24h": 388,
       "sparkline": [
-        367,
         918,
         474,
         258,
@@ -782,7 +781,8 @@
         272,
         177,
         551,
-        930
+        930,
+        243
       ],
       "dailyBars": [
         {
@@ -1413,7 +1413,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 483
+          "averageResponseTime": 435
         }
       ]
     },
@@ -1424,16 +1424,15 @@
       "description": "Market availability and health of the item listing pipeline.",
       "target": "https://api.skindeck.com/health/market",
       "kind": "http",
-      "currentStatus": "operational",
-      "lastCheckedAt": "2026-11-02T08:21:57.051Z",
-      "responseTime": 2788,
-      "httpCode": 200,
-      "latestError": null,
-      "uptime90d": 0.9366729678638941,
-      "uptime24h": 1,
-      "averageResponseTime24h": 1334,
+      "currentStatus": "outage",
+      "lastCheckedAt": "2026-11-02T18:03:46.430Z",
+      "responseTime": 5071,
+      "httpCode": 503,
+      "latestError": "Unexpected status code 503",
+      "uptime90d": 0.9359886201991465,
+      "uptime24h": 0.8888888888888888,
+      "averageResponseTime24h": 1773,
       "sparkline": [
-        1541,
         3491,
         1918,
         1159,
@@ -1480,7 +1479,8 @@
         588,
         638,
         2314,
-        2788
+        2788,
+        5071
       ],
       "dailyBars": [
         {
@@ -2108,9 +2108,9 @@
         },
         {
           "date": "2026-11-02T00:00:00.000Z",
-          "label": "100% uptime",
-          "status": "operational",
-          "availability": 1,
+          "label": "80% uptime",
+          "status": "outage",
+          "availability": 0.8,
           "averageResponseTime": 1582
         }
       ]
@@ -2123,15 +2123,14 @@
       "target": "https://api.skindeck.com/health/inventory",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-11-02T08:22:02.990Z",
-      "responseTime": 5932,
+      "lastCheckedAt": "2026-11-02T18:03:49.368Z",
+      "responseTime": 2934,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9725897920604915,
+      "uptime90d": 0.9724988146040777,
       "uptime24h": 1,
-      "averageResponseTime24h": 4851,
+      "averageResponseTime24h": 4347,
       "sparkline": [
-        3513,
         4180,
         4676,
         4424,
@@ -2178,7 +2177,8 @@
         5430,
         1972,
         5206,
-        5932
+        5932,
+        2934
       ],
       "dailyBars": [
         {
@@ -2809,7 +2809,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 4635
+          "averageResponseTime": 4295
         }
       ]
     }
